@@ -1,0 +1,8 @@
+/target/
+*.iml
+/.metadata/
+/.idea/
+/.settings/*
+/FailedTestsScreenshots/
+/.test-output/
+/.ExtentReport/

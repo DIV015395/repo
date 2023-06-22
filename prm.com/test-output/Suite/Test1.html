@@ -1,0 +1,1431 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/29</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 02 12:34:44 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>128 seconds (128142 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1072564456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1072564456'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>35</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage()'><b>verifyAppointmentAddHomePage</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: @@ Test scripts has been started here @@</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.tearDown()'><b>tearDown</b><br>Test class: com.prm.scripts.AppointmentAddTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.bookingAnNewAppointment()'><b>bookingAnNewAppointment</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmwntAdd #2:New Appointment Booked Successfully</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (78b6ba6b656d3066597df3cd4324dbf2)] -&gt; xpath: //div[@id=&apos;clinicNameContainer&apos;]//select[@id=&apos;addressListContainer&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\INSYS~1.CON\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 78b6ba6b656d3066597df3cd4324dbf2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.AppointmentPage.selectClinicFromDropdown(AppointmentPage.java:302)
+	at com.prm.scripts.AppointmentAddTestCase.bookingAnNewAppointment(AppointmentAddTestCase.java:122)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1851346599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1851346599'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (78b6ba6b656d3066597df3cd4324dbf2)] -&gt; xpath: //div[@id=&apos;clinicNameContainer&apos;]//select[@id=&apos;addressListContainer&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\INSYS~1.CON\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 78b6ba6b656d3066597df3cd4324dbf2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.AppointmentPage.selectClinicFromDropdown(AppointmentPage.java:302)
+	at com.prm.scripts.AppointmentAddTestCase.bookingAnNewAppointment(AppointmentAddTestCase.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>32</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verificationOfAllElements()'><b>verificationOfAllElements</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmwntAdd #1:All WebElements hasbeen checked</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.prm.pageobject.AppointmentPage.chekingAllWebElementOnAppAddHp(AppointmentPage.java:274)
+	at com.prm.scripts.AppointmentAddTestCase.verificationOfAllElements(AppointmentAddTestCase.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713161861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713161861'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.prm.pageobject.AppointmentPage.chekingAllWebElementOnAppAddHp(AppointmentPage.java:274)
+	at com.prm.scripts.AppointmentAddTestCase.verificationOfAllElements(AppointmentAddTestCase.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkingWithoutEnteringAnyDataAndSave()'><b>checkingWithoutEnteringAnyDataAndSave</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #4:It is not allowing user to Book any appointment without mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyingCancelBtn()'><b>verifyingCancelBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #5:Cancel button working fine</td>
+<td></td>
+<td>1</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.behaviourOfDateCalOnEvent()'><b>behaviourOfDateCalOnEvent</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #11:Date of event calender is showing curren date</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace620630533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace620630533'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.behaviourOfEventType()'><b>behaviourOfEventType</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #6:event type Drpdwn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace548507860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace548507860'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkAfterAutoSelectEditable()'><b>checkAfterAutoSelectEditable</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #10A&10B:After Auto select all fields will editable</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1507068048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1507068048'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkingAfterClickingOnGoToSchedulerYEsBtn()'><b>checkingAfterClickingOnGoToSchedulerYEsBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #18:After clicking on go to scheduler button and then clicking on yes it will redirect to the Appointment scheduler home page</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace908236882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace908236882'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkingFirstoperatoryByDEfaultSelectedOrNot()'><b>checkingFirstoperatoryByDEfaultSelectedOrNot</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #15:By Default first operatory will be selected when we redirect to the Add appointment page</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628035783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628035783'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkingTextualBoxIsApperedOrNotAfterClickingOnOtherFromChiefComplaints()'><b>checkingTextualBoxIsApperedOrNotAfterClickingOnOtherFromChiefComplaints</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #19:After clicking on others from chief complaints a textual box  will appear which have word limits of 768</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1299867605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1299867605'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.checkingWithoutMandatoryFields()'><b>checkingWithoutMandatoryFields</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #2&3&4&8:All error Msg is verified</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1988452978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988452978'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.impactOfTitle()'><b>impactOfTitle</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #2:Title has been verified on the event listing home page</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1755289773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1755289773'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.invalidTimeDuation()'><b>invalidTimeDuation</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #8:In Event time duration has been verified</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1927562011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1927562011'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.sameTimeTwoAppointmentIsNotPosibleOnSameOperatory()'><b>sameTimeTwoAppointmentIsNotPosibleOnSameOperatory</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #16:If First opratory have a appointment at a time if we want to book again appointment on same operatory it will be disable</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179840034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179840034'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.selectFutureDateAndVerifyingTheTimeSlotByDefaultTime()'><b>selectFutureDateAndVerifyingTheTimeSlotByDefaultTime</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #8:If you will select future Date then time slot's time will Start with 9:00</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1536150751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1536150751'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifiTentativeCheckbox()'><b>verifiTentativeCheckbox</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #21:It has been verified sms/email check appear after click on tentative checkbox</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157188318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157188318'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verificationAlreadyBookedSlotOfDoctor()'><b>verificationAlreadyBookedSlotOfDoctor</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #3:Doctor have already an appointment at this time</td>
+<td><div><pre>java.lang.Throwable: Method AppointmentAddTestCase.verificationAlreadyBookedSlotOfDoctor()[pri:3, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855891429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855891429'><pre>java.lang.Throwable: Method AppointmentAddTestCase.verificationAlreadyBookedSlotOfDoctor()[pri:3, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verificationOfAutoSelectingPatientFromSuggestion()'><b>verificationOfAutoSelectingPatientFromSuggestion</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #9A&9B:it allowing user to auto select from suggestion</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1826448582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1826448582'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verificationOfByDefaultTimeInTimeSlot()'><b>verificationOfByDefaultTimeInTimeSlot</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppoitnmentAdd #7:It has been verified that time in time slot is just next to the current time</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace596406589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace596406589'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAfterClickingOnGoToSchedulerBtn()'><b>verifyAfterClickingOnGoToSchedulerBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #17:After clicking on go to scheduler it will display a popup where will be message,yes Button and No Button</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1162442403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1162442403'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyAllWebElementOnEventAdd()'><b>verifyAllWebElementOnEventAdd</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #1:All Mandatory WebElements are present on event Add</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1012541630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1012541630'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyBehaviourOfCategoryDrpDwnOnEvent()'><b>verifyBehaviourOfCategoryDrpDwnOnEvent</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #5:Category Drpdwn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1100963071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1100963071'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyBehaviourOfClinicDrpDwnOnEvent()'><b>verifyBehaviourOfClinicDrpDwnOnEvent</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #3:Clinic Drpdwn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008765856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1008765856'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyBehaviourOfDoctorDrpDwnOnEvent()'><b>verifyBehaviourOfDoctorDrpDwnOnEvent</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #4:Doctor Drpdwn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1201132939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201132939'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyByDefaultTimeInDurationTime()'><b>verifyByDefaultTimeInDurationTime</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #11:By default duration is 30</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901003493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901003493'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyCancelBtn()'><b>verifyCancelBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #10:Cancel Btn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace398233069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace398233069'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()'><b>verifyDocIfAlreadyAppOnSameTime</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #7:Doctor has aleady an app or event has been verified</td>
+<td><div><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()[pri:38, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace925593910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace925593910'><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()[pri:38, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyEventTimeWhichNotAvailableOnScheduler()'><b>verifyEventTimeWhichNotAvailableOnScheduler</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #12:you can book event which time slot is not availble in scheduler</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace387621376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace387621376'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable()'><b>verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #20:if Both operatories booked than that time should be disable from time slot dropdown</td>
+<td><div><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable()[pri:20, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace325278980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace325278980'><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable()[pri:20, instance:com.prm.scripts.AppointmentAddTestCase@24569dba] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyResetBtn()'><b>verifyResetBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #9:Reset Btn is working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103386074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103386074'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyWithInvalidEmailId()'><b>verifyWithInvalidEmailId</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #14:After entering invalid email id it is giving an Error message</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace343453629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace343453629'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verifyingResetBtn()'><b>verifyingResetBtn</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #6:Reset button working fine</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606547367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1606547367'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+<tr>
+<td title='com.prm.scripts.AppointmentAddTestCase.verrifyMobileStartWithZero()'><b>verrifyMobileStartWithZero</b><br>Test class: com.prm.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentApp #13:Started mobile number with 0 is not valid and it will not allow you too enter less than digit .please enter valid number</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1990779601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1990779601'><pre>java.lang.NullPointerException
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:149)
+	at pageobjects.utils.PCDriver$1.apply(PCDriver.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForPageLoad(PCDriver.java:153)
+	at com.prm.pageobject.AppointmentPage.toVerifyAppointmentHomePage(AppointmentPage.java:261)
+	at com.prm.scripts.AppointmentAddTestCase.verifyAppointmentAddHomePage(AppointmentAddTestCase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.AppointmentAddTestCase@24569dba</td></tr>
+</table><p>
+</body>
+</html>

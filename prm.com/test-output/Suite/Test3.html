@@ -1,0 +1,1390 @@
+<html>
+<head>
+<title>TestNG:  Test3</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test3</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/24</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 02 12:37:10 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3876 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040620661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040620661'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage()'><b>verifyPatientRegistrationHomePage</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.tearDown()'><b>tearDown</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.AllWebElementscheckup()'><b>AllWebElementscheckup</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1452956297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1452956297'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviorOfAllergie()'><b>behaviorOfAllergie</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace72842999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace72842999'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviorOfGroupOption()'><b>behaviorOfGroupOption</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1849078268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1849078268'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfAgeTextFields()'><b>behaviourOfAgeTextFields</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528525819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528525819'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfAllSelectOfMixed()'><b>behaviourOfAllSelectOfMixed</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293984152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293984152'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfAltConatctName()'><b>behaviourOfAltConatctName</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace567614551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567614551'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfAltConatctNo()'><b>behaviourOfAltConatctNo</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1390270477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1390270477'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfCancelBtn()'><b>behaviourOfCancelBtn</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace766502658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace766502658'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfCountryAndStates()'><b>behaviourOfCountryAndStates</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111009562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111009562'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfDOBCalender()'><b>behaviourOfDOBCalender</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831548374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831548374'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfDentalCheckup()'><b>behaviourOfDentalCheckup</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279849975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1279849975'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfGenderBtn()'><b>behaviourOfGenderBtn</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619709421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619709421'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfMedicalHistory()'><b>behaviourOfMedicalHistory</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424401028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424401028'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfMedication()'><b>behaviourOfMedication</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211497387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1211497387'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfPastHistory()'><b>behaviourOfPastHistory</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1208371544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208371544'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfPatientNotes()'><b>behaviourOfPatientNotes</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7233114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7233114'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfResetBtn()'><b>behaviourOfResetBtn</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace386168289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386168289'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.behaviourOfZipTextField()'><b>behaviourOfZipTextField</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1934009176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1934009176'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.bestTimeToReachYou()'><b>bestTimeToReachYou</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1060181847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1060181847'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.checkByDefaultSelectedDentist()'><b>checkByDefaultSelectedDentist</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551330580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551330580'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.validatingLandline()'><b>validatingLandline</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1148488048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1148488048'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyBeheviourApproveAndAppBtn()'><b>verifyBeheviourApproveAndAppBtn</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366285362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366285362'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyEditOnPatientDashBoard()'><b>verifyEditOnPatientDashBoard</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace497887747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497887747'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+<tr>
+<td title='com.prm.scripts.PatientRegistrationTestCase.verifyErrorMsg()'><b>verifyErrorMsg</b><br>Test class: com.prm.scripts.PatientRegistrationTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509471234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509471234'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:688)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:158)
+	at com.prm.pageobject.DoctorDashBoard.clickOnPatientAdd(DoctorDashBoard.java:94)
+	at com.prm.scripts.PatientRegistrationTestCase.verifyPatientRegistrationHomePage(PatientRegistrationTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.prm.scripts.PatientRegistrationTestCase@6cb107fd</td></tr>
+</table><p>
+</body>
+</html>

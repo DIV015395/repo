@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.clovedental.scripts.AppointmentListingTestCase">
+        <methods>
+          <include name="verifyDoctorFilterOnEventList"/>
+          <include name="verifyFilterOfCategoryType"/>
+          <include name="dateFilterAlongWithAppType"/>
+          <include name="verifyDoctorDashboard"/>
+          <include name="noRecordFoundMsgVerification"/>
+          <include name="verifydeleteBtn"/>
+          <include name="verifyTentiveAterClickingOnEditBtn"/>
+          <include name="checkFrmDateIsNotLaterToToDate"/>
+          <include name="CheckedFrmDateIsBeforeAfterDate"/>
+          <include name="behaviourOfDeleteBtn"/>
+          <include name="verifyDoctorFilter"/>
+          <include name="verifyFrmAndToDateFilter"/>
+          <include name="behaviourOfNoShowBtn"/>
+          <include name="verifyActionBtn"/>
+          <include name="verifyOnClickDeletePopUpYes"/>
+          <include name="setup"/>
+          <include name="verifyEditBtnOnEvent"/>
+          <include name="clickOnEditAndVerifyPastDate"/>
+          <include name="verifyAllEleOnAppListHp"/>
+          <include name="impactAppListOnOtherModule"/>
+          <include name="verifyMandatoryElementOnEventList"/>
+          <include name="verifytentativeWithViewAndEditBtn"/>
+          <include name="verifyConfirmedWithViewEditDeleteBtn"/>
+          <include name="checkFromAndToDateDiffIsMoreThanSixty"/>
+          <include name="tearDown"/>
+          <include name="verifyEditBtn"/>
+          <include name="verifyAppointmentListHomePage"/>
+          <include name="verifyAppointmentTypeFilter"/>
+          <include name="verifyViewBtnBehaviour"/>
+        </methods>
+      </class> <!-- com.clovedental.scripts.AppointmentListingTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

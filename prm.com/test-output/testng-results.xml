@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-25T09:32:53Z" name="Default suite" finished-at="2023-04-25T09:34:05Z" duration-ms="71820">
+    <groups>
+    </groups>
+    <test started-at="2023-04-25T09:32:53Z" name="Default test" finished-at="2023-04-25T09:34:05Z" duration-ms="71820">
+      <class name="com.prm.scripts.AppointmentAddEConsultTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8]" started-at="2023-04-25T09:32:53Z" name="setup" finished-at="2023-04-25T09:33:14Z" duration-ms="20762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="appointmentAddPage()[pri:0, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8]" started-at="2023-04-25T09:33:14Z" name="appointmentAddPage" finished-at="2023-04-25T09:33:25Z" duration-ms="11325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentAddPage -->
+        <test-method signature="bookNewAppointmentEConsult()[pri:3, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8]" started-at="2023-04-25T09:33:25Z" name="bookNewAppointmentEConsult" description="Book Appointment For E-Consult" finished-at="2023-04-25T09:33:55Z" duration-ms="30478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookNewAppointmentEConsult -->
+        <test-method is-config="true" signature="statusOfScripts(org.testng.ITestResult)[pri:0, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8]" started-at="2023-04-25T09:33:55Z" name="statusOfScripts" finished-at="2023-04-25T09:33:55Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookNewAppointmentEConsult status=SUCCESS method=AppointmentAddEConsultTestCase.bookNewAppointmentEConsult()[pri:3, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8] output={null}]]]>
+=======
+<testng-results ignored="6" total="7" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-20T19:12:43Z" name="Default suite" finished-at="2023-04-20T19:14:10Z" duration-ms="87046">
+    <groups>
+    </groups>
+    <test started-at="2023-04-20T19:12:43Z" name="Default test" finished-at="2023-04-20T19:14:10Z" duration-ms="87046">
+      <class name="com.prm.scripts.PrescriptionTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b]" started-at="2023-04-20T19:12:43Z" name="setup" finished-at="2023-04-20T19:13:02Z" duration-ms="19946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="verifyPatientDashBoardHomePage()[pri:0, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b]" started-at="2023-04-20T19:13:02Z" name="verifyPatientDashBoardHomePage" finished-at="2023-04-20T19:13:06Z" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPatientDashBoardHomePage -->
+        <test-method signature="addPrescription()[pri:2, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b]" started-at="2023-04-20T19:13:06Z" name="addPrescription" finished-at="2023-04-20T19:14:01Z" duration-ms="54374" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //td[text()='Dr. reddy4']/../td[text()='sup.head']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-S2MF7MK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8616, moz:profile: C:\Users\Nikhil\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5394fb0a-6637-4363-b289-2c3d773d771d
+*** Element info: {Using=xpath, value=//td[text()='Dr. reddy4']/../td[text()='sup.head']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()='Dr. reddy4']/../td[text()='sup.head']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-S2MF7MK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8616, moz:profile: C:\Users\Nikhil\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5394fb0a-6637-4363-b289-2c3d773d771d
+*** Element info: {Using=xpath, value=//td[text()='Dr. reddy4']/../td[text()='sup.head']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.prm.patientdashboard.pageobject.PrescriptionListingPage.prescriptionInMainList(PrescriptionListingPage.java:134)
+at com.prm.scripts.PrescriptionTestCase.addPrescription(PrescriptionTestCase.java:220)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+        <test-method is-config="true" signature="statusOfScripts(org.testng.ITestResult)[pri:0, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b]" started-at="2023-04-20T19:14:01Z" name="statusOfScripts" description="@@ Test script has been completed @@" finished-at="2023-04-20T19:14:01Z" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPrescription status=FAILURE method=PrescriptionTestCase.addPrescription()[pri:2, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b] output={null}]]]>
+>>>>>>> feature/LwoFilePrescription
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusOfScripts -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.prm.scripts.AppointmentAddEConsultTestCase@1bcf67e8]" started-at="2023-04-25T09:33:55Z" name="tearDown" finished-at="2023-04-25T09:34:05Z" duration-ms="9223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.prm.scripts.AppointmentAddEConsultTestCase -->
+=======
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.prm.scripts.PrescriptionTestCase@56de6d6b]" started-at="2023-04-20T19:14:01Z" name="tearDown" finished-at="2023-04-20T19:14:10Z" duration-ms="8568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.prm.scripts.PrescriptionTestCase -->
+>>>>>>> feature/LwoFilePrescription
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

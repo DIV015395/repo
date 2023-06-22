@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [EventTestCases]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Miscellaneous Call(failed)(failed)(failed)">
+    <classes>
+      <class name="com.prm.scripts.MiscellaneousCallTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="statusOfScripts"/>
+          <include name="verifyNameMobileSearchFilter"/>
+          <include name="checkAllButtonOnNewMiscellaneousCall"/>
+          <include name="tearDown"/>
+          <include name="verifyPatientdashBoardHomePage"/>
+        </methods>
+      </class> <!-- com.prm.scripts.MiscellaneousCallTestCase -->
+    </classes>
+  </test> <!-- Miscellaneous Call(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [EventTestCases]]] -->

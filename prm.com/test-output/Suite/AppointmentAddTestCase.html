@@ -1,0 +1,618 @@
+<html>
+<head>
+<title>TestNG:  AppointmentAddTestCase</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AppointmentAddTestCase</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/5/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 12 17:31:57 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1114 seconds (1114217 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.bookingAnAppointmentByUsingSchedulaerCalender()'><b>bookingAnAppointmentByUsingSchedulaerCalender</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #12:Booking Appointment through the scheduler.After book appointment it should redirect to the scheduler calender Page</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:181)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentSchedulerCalenderPage.bookingAppThroughSchedular(AppointmentSchedulerCalenderPage.java:66)
+	at com.clovedental.scripts.AppointmentAddTestCase.bookingAnAppointmentByUsingSchedulaerCalender(AppointmentAddTestCase.java:182)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+*** Element info: {Using=xpath, value=//div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 28 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173060252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173060252'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pageobjects.utils.PCDriver.waitForElementToBeClickable(PCDriver.java:181)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentSchedulerCalenderPage.bookingAppThroughSchedular(AppointmentSchedulerCalenderPage.java:66)
+	at com.clovedental.scripts.AppointmentAddTestCase.bookingAnAppointmentByUsingSchedulaerCalender(AppointmentAddTestCase.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+*** Element info: {Using=xpath, value=//div[@style=&apos;width: 891px; left: 890px; top: 0px;&apos;]//div[text()=&apos;17:00-19:00&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 28 more
+</pre></div></td>
+<td>39</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.impactOfTitle()'><b>impactOfTitle</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #2:Title has been verified on the event listing home page</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[contains(text(),&apos;himalaya&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;himalaya&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.clovedental.pageobject.AppointmnetAdd.ClinicEventsPage.verifyTitleDisplayOnEventlist(ClinicEventsPage.java:125)
+	at com.clovedental.scripts.AppointmentAddTestCase.impactOfTitle(AppointmentAddTestCase.java:305)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637601612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637601612'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[contains(text(),&apos;himalaya&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;himalaya&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.clovedental.pageobject.AppointmnetAdd.ClinicEventsPage.verifyTitleDisplayOnEventlist(ClinicEventsPage.java:125)
+	at com.clovedental.scripts.AppointmentAddTestCase.impactOfTitle(AppointmentAddTestCase.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifiTentativeCheckbox()'><b>verifiTentativeCheckbox</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;appTentativeEvent&quot; name=&quot;appTentativeEvent&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (848.2833251953125,408.41668701171875) because another element &lt;span class=&quot;ui-icon ui-icon-checkbox-off ui-icon-shadow&quot;&gt; obscures it
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentPage.checkBehaviourOfTentativeCheckBox(AppointmentPage.java:530)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifiTentativeCheckbox(AppointmentAddTestCase.java:266)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace677317086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace677317086'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;appTentativeEvent&quot; name=&quot;appTentativeEvent&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (848.2833251953125,408.41668701171875) because another element &lt;span class=&quot;ui-icon ui-icon-checkbox-off ui-icon-shadow&quot;&gt; obscures it
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;CONNSOL4&apos;, ip: &apos;192.168.1.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6784, moz:profile: C:\Users\insys.connsol4\App..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: b0c83798-88b5-41cf-84f7-f5a0056c6914
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentPage.checkBehaviourOfTentativeCheckBox(AppointmentPage.java:530)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifiTentativeCheckbox(AppointmentAddTestCase.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyByDefaultTimeInDurationTime()'><b>verifyByDefaultTimeInDurationTime</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #11:By default duration is 30</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found []
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentPage.verifyDurationTime(AppointmentPage.java:427)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifyByDefaultTimeInDurationTime(AppointmentAddTestCase.java:176)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1175418534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1175418534'><pre>java.lang.AssertionError: expected [30] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentPage.verifyDurationTime(AppointmentPage.java:427)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifyByDefaultTimeInDurationTime(AppointmentAddTestCase.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyEventTimeWhichNotAvailableOnScheduler()'><b>verifyEventTimeWhichNotAvailableOnScheduler</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: later</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentSchedulerCalenderPage.timeSlotWhichIsNotAvailableOnwscheduler(AppointmentSchedulerCalenderPage.java:184)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifyEventTimeWhichNotAvailableOnScheduler(AppointmentAddTestCase.java:406)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23053378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23053378'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.clovedental.pageobject.AppointmnetAdd.AppointmentSchedulerCalenderPage.timeSlotWhichIsNotAvailableOnwscheduler(AppointmentSchedulerCalenderPage.java:184)
+	at com.clovedental.scripts.AppointmentAddTestCase.verifyEventTimeWhichNotAvailableOnScheduler(AppointmentAddTestCase.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>56</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.behaviourOfDateCalOnEvent()'><b>behaviourOfDateCalOnEvent</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #20:Date of event calender is showing curren date</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.behaviourOfEventType()'><b>behaviourOfEventType</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #6:event type Drpdwn is working fine</td>
+<td></td>
+<td>4</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.bookingAnNewAppointment()'><b>bookingAnNewAppointment</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmwntAdd #2:New Appointment Booked Successfully</td>
+<td></td>
+<td>16</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkAfterAutoSelectEditable()'><b>checkAfterAutoSelectEditable</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #10A&10B:After Auto select all fields will editable</td>
+<td></td>
+<td>2</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkingAfterClickingOnGoToSchedulerYEsBtn()'><b>checkingAfterClickingOnGoToSchedulerYEsBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #18:After clicking on go to scheduler button and then clicking on yes it will redirect to the Appointment scheduler home page</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkingFirstoperatoryByDEfaultSelectedOrNot()'><b>checkingFirstoperatoryByDEfaultSelectedOrNot</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #15:By Default first operatory will be selected when we redirect to the Add appointment page<br/>
+<a href="#Output-1637876401" onClick='toggleBox("Output-1637876401", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1637876401" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1637876401">
+By Default first operatory is selected <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkingTextualBoxIsApperedOrNotAfterClickingOnOtherFromChiefComplaints()'><b>checkingTextualBoxIsApperedOrNotAfterClickingOnOtherFromChiefComplaints</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #19:After clicking on others from chief complaints a textual box  will appear which have word limits of 768</td>
+<td></td>
+<td>0</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkingWithoutEnteringAnyDataAndSave()'><b>checkingWithoutEnteringAnyDataAndSave</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #4:It is not allowing user to Book any appointment without mandatory fields</td>
+<td></td>
+<td>5</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.checkingWithoutMandatoryFields()'><b>checkingWithoutMandatoryFields</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #2&3&4&8:All error Msg is verified</td>
+<td></td>
+<td>9</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.invalidTimeDuation()'><b>invalidTimeDuation</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #8:In Event time duration has been verified</td>
+<td></td>
+<td>11</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.sameTimeTwoAppointmentIsNotPosibleOnSameOperatory()'><b>sameTimeTwoAppointmentIsNotPosibleOnSameOperatory</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #16:If First opratory have a appointment at a time if we want to book again appointment on same operatory it will be disable<br/>
+<a href="#Output-57085696" onClick='toggleBox("Output-57085696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-57085696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-57085696">
+first operatory is already booked<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.selectFutureDateAndVerifyingTheTimeSlotByDefaultTime()'><b>selectFutureDateAndVerifyingTheTimeSlotByDefaultTime</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #8:If you will select future Date then time slot's time will Start with 9:00<br/>
+<a href="#Output-636959006" onClick='toggleBox("Output-636959006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-636959006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-636959006">
+for future date time start will be 09:00 <br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verificationAlreadyBookedSlotOfDoctor()'><b>verificationAlreadyBookedSlotOfDoctor</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #3:Doctor have already an appointment at this time</td>
+<td></td>
+<td>14</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verificationOfAllElements()'><b>verificationOfAllElements</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmwntAdd #1:All WebElements hasbeen checked</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verificationOfAutoSelectingPatientFromSuggestion()'><b>verificationOfAutoSelectingPatientFromSuggestion</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #9A&9B:it allowing user to auto select from suggestion</td>
+<td></td>
+<td>2</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verificationOfByDefaultTimeInTimeSlot()'><b>verificationOfByDefaultTimeInTimeSlot</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppoitnmentAdd #7:It has been verified that time in time slot is just next to the current time</td>
+<td></td>
+<td>0</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyAfterClickingOnGoToSchedulerBtn()'><b>verifyAfterClickingOnGoToSchedulerBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #17:After clicking on go to scheduler it will display a popup where will be message,yes Button and No Button</td>
+<td></td>
+<td>1</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyAllWebElementOnEventAdd()'><b>verifyAllWebElementOnEventAdd</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #1:All Mandatory WebElements are present on event Add</td>
+<td></td>
+<td>5</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyBehaviourOfCategoryDrpDwnOnEvent()'><b>verifyBehaviourOfCategoryDrpDwnOnEvent</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #5:Category Drpdwn is working fine</td>
+<td></td>
+<td>4</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyBehaviourOfClinicDrpDwnOnEvent()'><b>verifyBehaviourOfClinicDrpDwnOnEvent</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #3:Clinic Drpdwn is working fine</td>
+<td></td>
+<td>4</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyBehaviourOfDoctorDrpDwnOnEvent()'><b>verifyBehaviourOfDoctorDrpDwnOnEvent</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #4:Doctor Drpdwn is working fine</td>
+<td></td>
+<td>5</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyCancelBtn()'><b>verifyCancelBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #20:Cancel Btn is working fine</td>
+<td></td>
+<td>7</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable()'><b>verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #20:if operatories booked than that time should be disable from time slot dropdown</td>
+<td></td>
+<td>37</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyResetBtn()'><b>verifyResetBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #20:Reset Btn is working fine</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyWithInvalidEmailId()'><b>verifyWithInvalidEmailId</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #14:After entering invalid email id it is giving an Error message</td>
+<td></td>
+<td>5</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyingCancelBtn()'><b>verifyingCancelBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #5:Cancel button working fine</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyingResetBtn()'><b>verifyingResetBtn</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentAdd #6:Reset button working fine</td>
+<td></td>
+<td>3</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verrifyMobileStartWithZero()'><b>verrifyMobileStartWithZero</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: AppointmentApp #13:Started mobile number with 0 is not valid and it will not allow you too enter less than digit .please enter valid number</td>
+<td></td>
+<td>16</td>
+<td>com.clovedental.scripts.AppointmentAddTestCase@359df09a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.clovedental.scripts.AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()'><b>verifyDocIfAlreadyAppOnSameTime</b><br>Test class: com.clovedental.scripts.AppointmentAddTestCase<br>Test method: 1: EventAdd #7:Doctor has aleady an app or event has been verified</td>
+<td><div><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()[pri:38, instance:com.clovedental.scripts.AppointmentAddTestCase@359df09a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412656257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412656257'><pre>java.lang.Throwable: Method AppointmentAddTestCase.verifyDocIfAlreadyAppOnSameTime()[pri:38, instance:com.clovedental.scripts.AppointmentAddTestCase@359df09a] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

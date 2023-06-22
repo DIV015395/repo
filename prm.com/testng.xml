@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.prm.scripts.TreatmentPlansTestCase1"/>
+      <class name="com.prm.scripts.TreatmentPlansTestCase2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+=======
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EventTestCases">
+	<test thread-count="5" name="ByDoctorEventTestCases" enabled="false">
+		<classes>
+			<class name="com.prm.scripts.EventTestCase">
+				<methods>
+					<include name="verifyAddingByDoctorEvent"></include>
+					<include name="verifyDocEventIfAlreadyEventOnSameTime"></include>
+					<include name="verifyUpdateDoctorEvent"></include>
+					<include name="verifyDeleteDoctorEvent"></include>
+					<include name="verifyAddEventIfAppointmentAlreadyBookedForTime"></include>
+					<include name="verifyAddEventIfTentativeAppointmentAlreadyBookedForTime"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ByOperatoryEventTestCases" enabled="false">
+		<classes>
+			<class name="com.prm.scripts.EventTestCase">
+				<methods>
+					<include name="verifyByOperatoryEvent"></include>
+					<include name="verifyAddingEventOnLastOpearatoryAvailable"></include>
+					<include name="verifyUpdateByOperatoryEvent"></include>
+					<include name="verifyDeleteByOperatoryEvent"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ByRoomEventTestCases" enabled="false">
+		<classes>
+			<class name="com.prm.scripts.EventTestCase">
+				<methods>
+					<include name="verifyByRoomEvent"></include>
+					<include name="verifyUpdateByRoomEvent"></include>
+					<include name="verifyDeleteByRoomEvent"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ByScannerEventTestCases" enabled="false">
+		<classes>
+			<class name="com.prm.scripts.EventTestCase">
+				<methods>
+					<include name="verifyByScannerEvent"></include>
+					<include name="verifyAddingEventOnLastScannerAvailable"></include>
+					<include name="verifyUpdateByScannerEvent"></include>
+					<include name="verifyDeleteByScannerEvent"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="EventListing"  enabled="false">
+		<classes>
+			<class name="com.prm.scripts.EventTestCase" >
+				<methods>
+					<include name="verifyElementOnEventList"></include>
+					<include name="verifyAddEventFromEventListingAndRedirection"></include>
+					<include name="verifyFrmAndToDateFilter"></include>
+					<include name="checkFrmDateIsNotLaterToToDate"></include>
+					<include name="verifyDoctorFilterWithDateFilterOnEventList"></include>
+					<include name="verifyEventTypeFilterWithDateFilter"></include>
+					<include name="verifyCategoryFilterWithDateAndTypeFilter"></include>
+					<include name="verifyResetBtnOnEventListing"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Miscellaneous Call" enabled="true">
+		<classes>
+			<class name="com.prm.scripts.MiscellaneousCallTestCase" >
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+>>>>>>> umesh_productSales_Event

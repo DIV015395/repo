@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.prm.scripts.PatientRegistrationTestCase">
+        <methods>
+          <include name="verifyPatientRegistrationHomePage"/>
+          <include name="verifyEditOnPatientDashBoard"/>
+          <include name="statusOfScripts"/>
+          <include name="behaviourOfAltConatctName"/>
+          <include name="behaviourOfMedicalHistory"/>
+          <include name="behaviourOfPastHistory"/>
+          <include name="behaviourOfResetBtn"/>
+          <include name="checkByDefaultSelectedDentist"/>
+          <include name="behaviorOfGroupOption"/>
+          <include name="behaviourOfCountryAndStates"/>
+          <include name="behaviourOfCancelBtn"/>
+          <include name="AllWebElementscheckup"/>
+          <include name="behaviourOfDentalCheckup"/>
+          <include name="behaviourOfAltConatctNo"/>
+          <include name="validatingLandline"/>
+          <include name="behaviourOfZipTextField"/>
+          <include name="verifyBeheviourApproveAndAppBtn"/>
+          <include name="behaviourOfAgeTextFields"/>
+          <include name="bestTimeToReachYou"/>
+          <include name="tearDown"/>
+          <include name="behaviourOfMedication"/>
+          <include name="behaviourOfPatientNotes"/>
+          <include name="setup"/>
+          <include name="behaviourOfAllSelectOfMixed"/>
+          <include name="verifyErrorMsg"/>
+          <include name="behaviorOfAllergie"/>
+        </methods>
+      </class> <!-- com.prm.scripts.PatientRegistrationTestCase -->
+      <class name="com.prm.scripts.AppointmentListingTestCase">
+        <methods>
+          <include name="checkFrmDateIsNotLaterToToDate"/>
+          <include name="noRecordFoundMsgVerification"/>
+          <include name="verifydeleteBtn"/>
+          <include name="verifyDoctorFilterOnEventList"/>
+          <include name="verifyFilterOfCategoryType"/>
+          <include name="statusOfScripts"/>
+          <include name="verifyTentiveAterClickingOnEditBtn"/>
+          <include name="verifyEditBtnOnEvent"/>
+          <include name="CheckedFrmDateIsBeforeAfterDate"/>
+          <include name="behaviourOfDeleteBtn"/>
+          <include name="verifyDoctorFilter"/>
+          <include name="verifyFrmAndToDateFilter"/>
+          <include name="behaviourOfNoShowBtn"/>
+          <include name="clickOnEditAndVerifyPastDate"/>
+          <include name="verifyOnClickDeletePopUpYes"/>
+          <include name="impactAppListOnOtherModule"/>
+          <include name="verifyMandatoryElementOnEventList"/>
+          <include name="verifytentativeWithViewAndEditBtn"/>
+          <include name="verifyAppointmentListHomePage"/>
+          <include name="verifyActionBtn"/>
+          <include name="setup"/>
+          <include name="verifyConfirmedWithViewEditDeleteBtn"/>
+          <include name="verifyAppointmentTypeFilter"/>
+          <include name="verifyViewBtnBehaviour"/>
+          <include name="dateFilterAlongWithAppType"/>
+          <include name="checkFromAndToDateDiffIsMoreThanSixty"/>
+          <include name="tearDown"/>
+          <include name="verifyAllEleOnAppListHp"/>
+          <include name="verifyEditBtn"/>
+        </methods>
+      </class> <!-- com.prm.scripts.AppointmentListingTestCase -->
+      <class name="com.prm.scripts.AppointmentAddTestCase">
+        <methods>
+          <include name="selectFutureDateAndVerifyTimeSlotByDefaultTime"/>
+          <include name="verifiTentativeCheckbox"/>
+          <include name="verificationOfAllElements"/>
+          <include name="verifyEventTimeWhichNotAvailableOnScheduler"/>
+          <include name="verifyAllWebElementOnEventAdd"/>
+          <include name="verifyAlreadyBookedSlotOfDoctor"/>
+          <include name="validateBehaviourOfMobSlot"/>
+          <include name="verifyBehaviourOfCategoryDrpDwnOnEvent"/>
+          <include name="verifyCancelBtn"/>
+          <include name="verifyAppointmentAddHomePage"/>
+          <include name="statusOfScripts"/>
+          <include name="verifyWithInvalidEmailId"/>
+          <include name="checkingAfterClickingOnGoToSchedulerYEsBtn"/>
+          <include name="bookAnNewAppointment"/>
+          <include name="checkAfterAutoSelectEditable"/>
+          <include name="validateOfAutoSelectPatientFromSuggestion"/>
+          <include name="verifyBehaviourOfClinicDrpDwnOnEvent"/>
+          <include name="verifyByDefaultTimeInDurationTime"/>
+          <include name="verificationOfByDefaultTimeInTimeSlot"/>
+          <include name="verifyDocIfAlreadyAppOnSameTime"/>
+          <include name="verifyBehaviourOfDoctorDrpDwnOnEvent"/>
+          <include name="checkingWithoutEnteringAnyDataAndSave"/>
+          <include name="tearDown"/>
+          <include name="verifyAfterClickingOnGoToSchedulerBtn"/>
+          <include name="checkingWithoutMandatoryFields"/>
+          <include name="invalidTimeDuation"/>
+          <include name="sameTimeTwoAppointmentIsNotPosibleOnSameOperatory"/>
+          <include name="verifyIfBothOperatoryWillBeBookedThenThatTimeFromTimeSlotIsDisable"/>
+          <include name="behaviourOfEventType"/>
+          <include name="verifyingResetBtn"/>
+          <include name="bookAnAppointmentBySchedulerCalender"/>
+          <include name="checkTextualBoxIsApperedOrNotAtClickOnOtherFromChiefComplaints"/>
+          <include name="checkedFirstoperatoryByDEfaultSelected"/>
+          <include name="verifyingCancelBtn"/>
+          <include name="impactOfTitle"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.prm.scripts.AppointmentAddTestCase -->
+=======
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.prm.scripts.EventTestCase">
+        <methods>
+          <include name="verifyDeleteDoctorEvent"/>
+          <include name="EventAddHomePage"/>
+          <include name="verifyAddingByDoctorEvent"/>
+          <include name="verifyUpdateDoctorEvent"/>
+          <include name="statusOfScripts"/>
+        </methods>
+      </class> <!-- com.prm.scripts.EventTestCase -->
+>>>>>>> umesh_productSales_Event
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
